@@ -29,18 +29,19 @@ function myEach(collection, callback) {
 
 myMap([1, 2, 3, 4], function(num){return num * 3});
 
-function myReduce(collection, callback, initialAcc) {
-    let acc = initialAcc === undefined ? collection[0] : initialAcc;
-    const startIndex = initialAcc === undefined ? 1 : 0;
-  
-    for (let i = startIndex; i < collection.length; i++) {
-      acc = callback(acc, collection[i], collection);
-    }
-  
-    return acc;
+function myReduce(collection, callback, acc) {
+  let keys = Object.keys(collection);
+  let start = 0;
+  if (acc === undefined) {
+    acc = collection[keys[0]];
+    start = 1;
+  }
+  for (let i = start; i < keys.length; i++) {
+    acc = callback(acc, collection[keys[i]], collection)
+  }
+  return acc;
 }
-
-console.log(myReduce(Object.values({one: 1, two: 2, three: 3}), function(acc, val) { return acc + val;}, 0));
+myReduce({one: 1, two: 2, three: 3}, function(acc, val) { return acc + val;}, 0);
 
 function myFind(collection, predicate) {
     for (let i = 0; i < collection.length; i++) {

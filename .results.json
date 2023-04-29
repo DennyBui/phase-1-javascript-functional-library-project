@@ -2,12 +2,12 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 26,
+    "passes": 27,
     "pending": 0,
-    "failures": 1,
-    "start": "2023-04-28T16:18:19.081Z",
-    "end": "2023-04-28T16:18:19.388Z",
-    "duration": 307
+    "failures": 0,
+    "start": "2023-04-29T00:42:20.425Z",
+    "end": "2023-04-29T00:42:21.157Z",
+    "duration": 732
   },
   "tests": [
     {
@@ -34,14 +34,14 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myMap does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -85,12 +85,7 @@
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 28",
-        "showDiff": true,
-        "expected": 28,
-        "stack": "AssertionError: expected undefined to equal 28\n    at Context.<anonymous> (test/indexTest.js:86:28)\n    at process.processImmediate (node:internal/timers:476:21)"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
@@ -102,14 +97,14 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -123,7 +118,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -206,20 +201,7 @@
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "returns the correct reduced value from object values",
-      "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 28",
-        "showDiff": true,
-        "expected": 28,
-        "stack": "AssertionError: expected undefined to equal 28\n    at Context.<anonymous> (test/indexTest.js:86:28)\n    at process.processImmediate (node:internal/timers:476:21)"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "calls alert with each element passed",
@@ -245,14 +227,14 @@
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myMap does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -292,6 +274,13 @@
       "err": {}
     },
     {
+      "title": "returns the correct reduced value from object values",
+      "fullTitle": "index.js myReduce returns the correct reduced value from object values",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "does not modify the original object",
       "fullTitle": "index.js myReduce does not modify the original object",
       "duration": 0,
@@ -301,14 +290,14 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -322,7 +311,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
